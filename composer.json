@@ -1,0 +1,33 @@
+{
+    "name": "narokishi/object-validator",
+    "description": "PHP package to validate objects",
+    "keywords": ["php", "validation", "stdclass", "generic-views-validation"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tomasz Motyl",
+            "email": "tomasz.motyl806@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "Narokishi\\ObjectValidator\\": "src/",
+            "Narokishi\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "php-coveralls/php-coveralls": "^2.1",
+        "phpunit/phpunit": "^7.3.2"
+    },
+    "scripts": {
+        "tests": "./vendor/phpunit/phpunit/phpunit",
+        "tests-windows": "php vendor/phpunit/phpunit/phpunit"
+    }
+}
